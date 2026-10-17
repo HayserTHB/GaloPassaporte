@@ -4,29 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
     <title>GaloPassaporte - Início</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>GaloPassaporte</h1>
-        <p>Sua história acompanhando o Atlético Mineiro.</p>
+    <header class="topo">
+        <div class="marca">
+            <h1>GaloPassaporte</h1>
+            <p>Sua história acompanhando o Atlético Mineiro.</p>
+        </div>
 
-        <nav>
+        <nav class="menu" aria-label="Principal">
             <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="pages/cadastrar.html">Cadastrar jogo</a></li>
-        <li><a href="pages/jogos.html">Meus jogos</a></li>
-        <li><a href="pages/futuros.html">Quero ir</a></li>
+                <li><a href="index.html" class="ativo">Início</a></li>
+                <li><a href="pages/cadastrar.html">Cadastrar jogo</a></li>
+                <li><a href="pages/jogos.html">Meus jogos</a></li>
+                <li><a href="pages/futuros.html">Quero ir</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
 
-        <section>
+        <section class="boas-vindas">
             <h2>Bem-vindo ao GaloPassaporte</h2>
 
             <p>
@@ -34,51 +41,42 @@
                 acompanhando os jogos do Atlético Mineiro.
             </p>
 
-            <a href="pages/cadastrar.html">Cadastrar uma nova experiência</a>
+            <a class="botao" href="pages/cadastrar.html">Cadastrar uma nova experiência</a>
         </section>
 
         <section>
             <h2>Meu histórico</h2>
 
-            <ul>
-                <li>Jogos acompanhados: 3</li>
-                <li>Vitórias acompanhadas: 2</li>
-                <li>Empates: 1</li>
-                <li>Avaliações realizadas: 3</li>
+            <ul class="estatisticas">
+                <li><strong>3</strong> Jogos acompanhados</li>
+                <li><strong>2</strong> Vitórias acompanhadas</li>
+                <li><strong>1</strong> Empates</li>
+                <li><strong>3</strong> Avaliações realizadas</li>
             </ul>
         </section>
 
         <section>
             <h2>Últimos jogos registrados</h2>
 
-            <article>
-                <h3>Atlético-MG 2 x 1 Bahia</h3>
+            <div class="lista-jogos">
+                <article class="jogo">
+                    <h3>Atlético-MG 2 x 1 Bahia</h3>
+                    <p class="info">15/09/2026 — Arena MRV</p>
+                    <p class="nota">Nota da experiência: 4,5/5</p>
+                    <a class="detalhes" href="detalhes.html">Ver detalhes</a>
+                </article>
 
-                <p>15/09/2026 — Arena MRV</p>
-
-                <p>Nota da experiência: 4,5/5</p>
-
-                <a href="detalhes.html">
-                    Ver detalhes
-                </a>
-            </article>
-
-            <article>
-                <h3>Atlético-MG 1 x 1 Cruzeiro</h3>
-
-                <p>30/08/2026 — Mineirão</p>
-
-                <p>Nota da experiência: 4/5</p>
-
-                <a href="detalhes.html">
-                    Ver detalhes
-                </a>
-            </article>
-
+                <article class="jogo">
+                    <h3>Atlético-MG 1 x 1 Cruzeiro</h3>
+                    <p class="info">30/08/2026 — Mineirão</p>
+                    <p class="nota">Nota da experiência: 4/5</p>
+                    <a class="detalhes" href="detalhes.html">Ver detalhes</a>
+                </article>
+            </div>
         </section>
 
     </main>
-<script src="script.js"></script>
+
     <footer>
         <p>&copy; 2026 GaloPassaporte</p>
     </footer>

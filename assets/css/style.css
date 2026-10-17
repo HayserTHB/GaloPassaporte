@@ -1,0 +1,73 @@
+/* GaloPassaporte — estilo inspirado no Galo: preto, branco e dourado */
+
+/* Variáveis: guardam as cores num lugar só. Para trocar uma cor, mude aqui. */
+:root {
+    --preto: #000000;
+    --superficie: #151515;
+    --superficie-2: #202020;
+    --linha: #2e2e2e;
+    --branco: #ffffff;
+    --cinza: #a8a8a8;
+    --ouro: #d4a93c;
+    --raio: 14px;
+    --fonte-titulo: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+    --fonte-texto: "Barlow", Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--preto);
+    color: var(--branco);
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    line-height: 1.5;
+    /* espaço embaixo para a barra de abas não cobrir o conteúdo */
+    padding-bottom: 80px;
+}
+
+h1, h2, h3 {
+    font-family: var(--fonte-titulo);
+    line-height: 1.1;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+/* Contorno dourado quando alguém navega com o teclado (tecla Tab) */
+a:focus-visible {
+    outline: 3px solid var(--ouro);
+    outline-offset: 3px;
+}
+
+/* ---------- Cabeçalho ---------- */
+
+.topo {
+    background: var(--preto);
+    border-top: 6px solid var(--branco);
+    border-bottom: 1px solid var(--linha);
+    padding: 1rem 1.25rem 1.1rem;
+}
+
+.topo h1 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.topo p {
+    color: var(--cinza);
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
+}
+
