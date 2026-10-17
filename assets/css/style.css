@@ -1,6 +1,4 @@
-/* GaloPassaporte — estilo inspirado no Galo: preto, branco e dourado */
 
-/* Variáveis: guardam as cores num lugar só. Para trocar uma cor, mude aqui. */
 :root {
     --preto: #000000;
     --superficie: #151515;
@@ -27,7 +25,7 @@ body {
     font-family: var(--fonte-texto);
     font-size: 1rem;
     line-height: 1.5;
-    /* espaço embaixo para a barra de abas não cobrir o conteúdo */
+    
     padding-bottom: 80px;
 }
 
@@ -45,13 +43,13 @@ a {
     color: inherit;
 }
 
-/* Contorno dourado quando alguém navega com o teclado (tecla Tab) */
+
 a:focus-visible {
     outline: 3px solid var(--ouro);
     outline-offset: 3px;
 }
 
-/* ---------- Cabeçalho ---------- */
+
 
 .topo {
     background: var(--preto);
@@ -71,3 +69,40 @@ a:focus-visible {
     margin-top: 0.25rem;
 }
 
+.menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10; 
+    background: var(--superficie);
+    border-top: 1px solid var(--linha);
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+    padding: 0.25rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--cinza);
+    border-top: 3px solid transparent;
+}
+
+
+.menu a.ativo {
+    color: var(--branco);
+    border-top-color: var(--ouro);
+}
