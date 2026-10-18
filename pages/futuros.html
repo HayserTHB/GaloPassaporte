@@ -3,22 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
     <title>GaloPassaporte - Jogos futuros</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
 
-<header>
+<header class="topo">
 
     <h1>GaloPassaporte</h1>
 
-    <nav>
+    <nav class="menu" aria-label="Principal">
         <ul>
             <li><a href="../index.html">Início</a></li>
             <li><a href="cadastrar.html">Cadastrar jogo</a></li>
             <li><a href="jogos.html">Meus jogos</a></li>
-            <li><a href="futuros.html">Quero ir</a></li>
+            <li><a href="futuros.html" class="ativo">Quero ir</a></li>
         </ul>
     </nav>
 
@@ -30,7 +35,7 @@
 
         <h2>Jogos que quero ir</h2>
 
-        <p>
+        <p class="intro">
             Veja as próximas partidas que você deseja acompanhar.
         </p>
 
@@ -38,7 +43,9 @@
 
     <section>
 
-        <article>
+        <div class="lista-jogos">
+
+        <article class="jogo">
 
             <h3>Atlético-MG x Flamengo</h3>
 
@@ -50,17 +57,19 @@
 
             <p>Estádio: Arena MRV</p>
 
-            <button type="button">
+            <div class="acoes">
+                <button type="button">
                 Marcar como fui
             </button>
 
-            <button type="button">
+            <button type="button" class="perigo">
                 Remover
             </button>
+            </div>
 
         </article>
 
-        <article>
+        <article class="jogo">
 
             <h3>Atlético-MG x Palmeiras</h3>
 
@@ -72,15 +81,19 @@
 
             <p>Estádio: Arena MRV</p>
 
-            <button type="button">
+            <div class="acoes">
+                <button type="button">
                 Marcar como fui
             </button>
 
-            <button type="button">
+            <button type="button" class="perigo">
                 Remover
             </button>
+            </div>
 
         </article>
+
+    </div>
 
     </section>
 

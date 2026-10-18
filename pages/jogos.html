@@ -3,21 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
     <title>GaloPassaporte - Meus jogos</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
 
-<header>
+<header class="topo">
 
     <h1>GaloPassaporte</h1>
 
-    <nav>
+    <nav class="menu" aria-label="Principal">
         <ul>
             <li><a href="../index.html">Início</a></li>
             <li><a href="cadastrar.html">Cadastrar jogo</a></li>
-            <li><a href="jogos.html">Meus jogos</a></li>
+            <li><a href="jogos.html" class="ativo">Meus jogos</a></li>
             <li><a href="futuros.html">Quero ir</a></li>
         </ul>
     </nav>
@@ -30,7 +35,7 @@
 
         <h2>Meus jogos</h2>
 
-        <p>
+        <p class="intro">
             Consulte os jogos que você já acompanhou.
         </p>
 
@@ -63,7 +68,7 @@
                 <option>Menor avaliação</option>
             </select>
 
-            <button type="submit">
+            <button type="submit" class="primario">
                 Pesquisar
             </button>
 
@@ -75,7 +80,9 @@
 
         <h2>Jogos registrados</h2>
 
-        <article>
+        <div class="lista-jogos">
+
+        <article class="jogo">
 
             <h3>Atlético-MG 2 x 1 Bahia</h3>
 
@@ -83,21 +90,23 @@
             <p>Competição: Campeonato Brasileiro</p>
             <p>Estádio: Arena MRV</p>
             <p>Setor: Brahma</p>
-            <p>Avaliação: 5/5</p>
+            <p class="nota">Avaliação: 5/5</p>
 
-            <a href="detalhes.html">Ver detalhes</a>
+            <div class="acoes">
+                <a class="detalhes" href="detalhes.html">Ver detalhes</a>
 
             <button type="button">
                 Editar
             </button>
 
-            <button type="button">
+            <button type="button" class="perigo">
                 Excluir
             </button>
+            </div>
 
         </article>
 
-        <article>
+        <article class="jogo">
 
             <h3>Atlético-MG 1 x 1 Cruzeiro</h3>
 
@@ -105,21 +114,23 @@
             <p>Competição: Campeonato Brasileiro</p>
             <p>Estádio: Mineirão</p>
             <p>Setor: Amarelo</p>
-            <p>Avaliação: 4/5</p>
+            <p class="nota">Avaliação: 4/5</p>
 
-            <a href="detalhes.html">Ver detalhes</a>
+            <div class="acoes">
+                <a class="detalhes" href="detalhes.html">Ver detalhes</a>
 
             <button type="button">
                 Editar
             </button>
 
-            <button type="button">
+            <button type="button" class="perigo">
                 Excluir
             </button>
+            </div>
 
         </article>
 
-        <article>
+        <article class="jogo">
 
             <h3>Atlético-MG 3 x 0 América-MG</h3>
 
@@ -127,19 +138,22 @@
             <p>Competição: Campeonato Mineiro</p>
             <p>Estádio: Arena MRV</p>
             <p>Setor: Inter Sul</p>
-            <p>Avaliação: 5/5</p>
+            <p class="nota">Avaliação: 5/5</p>
 
-            <a href="detalhes.html">Ver detalhes</a>
+            <div class="acoes">
+                <a class="detalhes" href="detalhes.html">Ver detalhes</a>
 
             <button type="button">
                 Editar
             </button>
 
-            <button type="button">
+            <button type="button" class="perigo">
                 Excluir
             </button>
+            </div>
 
         </article>
+        </div>
 
     </section>
 
