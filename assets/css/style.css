@@ -233,3 +233,68 @@ footer {
     font-weight: 600;
     text-decoration: underline;
     }
+
+    @media (min-width: 768px) {
+    body {
+        padding-bottom: 0;
+    }
+
+    .topo {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1.1rem 2rem;
+    }
+
+    .menu {
+        position: static;
+        background: transparent;
+        border: 0;
+    }
+
+    .menu ul {
+        display: flex;
+        gap: 0.4rem;
+    }
+
+    .menu a {
+        min-height: 44px;
+        padding: 0.4rem 1rem;
+        font-size: 0.95rem;
+        border-top: 0;
+        border-radius: 999px;
+    }
+
+    .menu a:hover {
+        color: var(--branco);
+        background: var(--superficie-2);
+    }
+
+    .menu a.ativo {
+        background: var(--branco);
+        color: var(--preto);
+    }
+
+    main {
+        padding: 2rem;
+        gap: 2.25rem;
+    }
+
+    .boas-vindas {
+        padding: 2.5rem;
+    }
+
+    .boas-vindas h2 {
+        font-size: 2.8rem;
+    }
+
+    .estatisticas {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .lista-jogos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
