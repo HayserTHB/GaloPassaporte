@@ -10,6 +10,7 @@
     --raio: 14px;
     --fonte-titulo: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
     --fonte-texto: "Barlow", Arial, sans-serif;
+    --perigo: #ff7b7b;
 }
 
 *,
@@ -121,6 +122,12 @@ main h2 {
     margin-bottom: 0.85rem;
 }
 
+.intro {
+    color: var(--cinza);
+    margin-bottom: 1rem;
+    max-width: 60ch;
+}
+
 .boas-vindas {
     background: var(--branco);
     color: var(--preto);
@@ -196,6 +203,93 @@ footer {
     padding: 1.5rem 1.25rem 0.5rem;
 }
 
+form {
+    display: grid;
+    gap: 0.4rem;
+    max-width: 640px;
+}
+
+label {
+    font-weight: 600;
+    margin-top: 0.8rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    min-height: 48px;
+    padding: 0.6rem 0.8rem;
+    background: var(--superficie);
+    color: var(--branco);
+    border: 1px solid var(--linha);
+    border-radius: 10px;
+    font: inherit;
+    color-scheme: dark; 
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid var(--ouro);
+    border-color: var(--ouro);
+}
+
+
+form h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--linha);
+}
+
+
+
+button {
+    font: inherit;
+    font-weight: 700;
+    min-height: 48px;
+    padding: 0.6rem 1.4rem;
+    border-radius: 999px;
+    border: 2px solid var(--branco);
+    background: transparent;
+    color: var(--branco);
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--superficie-2);
+}
+
+button:focus-visible {
+    outline: 3px solid var(--ouro);
+    outline-offset: 3px;
+}
+
+
+button.primario {
+    background: var(--branco);
+    color: var(--preto);
+}
+
+button.primario:hover {
+    background: #dddddd;
+}
+
+
+button.perigo {
+    border-color: var(--perigo);
+    color: var(--perigo);
+}
+
+form button {
+    margin-top: 0.8rem;
+}
 .lista-jogos {
         grid-template-columns: repeat(2, 1fr);
  }
@@ -234,6 +328,57 @@ footer {
     text-decoration: underline;
     }
 
+
+.acoes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+}
+
+.acoes .detalhes {
+    margin-top: 0;
+    margin-right: 0.4rem;
+}
+
+.acoes button {
+    min-height: 44px;
+    padding: 0.4rem 1.1rem;
+}
+
+.jogo p {
+    color: var(--cinza);
+    font-size: 0.95rem;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--superficie);
+    border: 1px solid var(--linha);
+}
+
+th,
+td {
+    padding: 0.8rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--linha);
+}
+
+th {
+    color: var(--cinza);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+td:last-child {
+    color: var(--ouro);
+    font-weight: 700;
+    text-align: right;
+}
     @media (min-width: 768px) {
     body {
         padding-bottom: 0;
@@ -298,3 +443,9 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+
+
+
+
+    
